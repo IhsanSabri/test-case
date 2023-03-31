@@ -1,0 +1,30 @@
+import styled from "@emotion/styled";
+
+import { Box } from "rebass";
+
+const BoxContainer = styled(Box)`
+    margin-top: 10px;
+`
+
+const FilterBox = styled(Box)`
+    overflow-y: none;
+    padding: 12px;
+    background: white;
+    font-family: Manrope;
+    font-style: normal;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
+
+const FilterName = styled(Box)`
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(51, 51, 51, 0.7);
+`;
+
+
+export { BoxContainer, FilterBox, FilterName };
