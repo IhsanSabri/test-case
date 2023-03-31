@@ -27,7 +27,7 @@ const Header = ({ setData }) => {
 
     return (
         <MainHeader mode="horizontal">
-            <Column xs={6} sm={6} md={6} lg={4} xl={4}>
+            <Column xs={8} sm={8} md={8} lg={4} xl={4}>
                 <BrandName to={'/'}>
                     Eteration
                 </BrandName>
@@ -39,10 +39,10 @@ const Header = ({ setData }) => {
                     onSearch={handleSearch}
                 />
             </Column>
-            <Column xs={4} sm={4} md={2} lg={4} xl={4}>
+            <Column xs={4} sm={4} md={4} lg={4} xl={4}>
                 <ShoppingOutlined />{totalPrice}
             </Column>
-            <Column xs={4} sm={4} md={2} lg={4} xl={4}>
+            <Column xs={4} sm={4} md={4} lg={4} xl={4}>
                 <UserOutlined /> İhsan Sabri
             </Column>
         </MainHeader>

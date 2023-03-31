@@ -32,11 +32,11 @@ const CheckoutCart = () => {
             <CardContainer>
                 {products.cart.map(item =>
                     <ItemCard key={item.id}>
-                        <Box>
+                        <Box width={1/2}>
                             <ProductName>{item.name}</ProductName>
                             <ProductPrice>{item.price}</ProductPrice>
                         </Box>
-                        <Flex>
+                        <Flex width={1/2} justifyContent="end">
                             <IncrementAndReduceButton onClick={() => dispatch(reduceProduct(item))}>-</IncrementAndReduceButton>
                             <ProductQuantity>{item.quantity}</ProductQuantity>
                             <IncrementAndReduceButton onClick={() => dispatch(incrementProduct(item))}>+</IncrementAndReduceButton>

@@ -1,16 +1,12 @@
 import styled from "@emotion/styled";
 
-import { Box, Flex } from 'rebass';
+import { Box } from 'rebass';
 import { Button, Card } from "antd";
 
-const Wrapper = styled(Flex)`
-    justify-content: space-evenly;
-    margin: 30px 0;
-`;
 
 const CardWrapper = styled(Card)`
-    width: 60%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    margin-top: 15px;
 `;
 
 const ImageBox = styled(Box)`
@@ -32,4 +28,4 @@ const AddToCartButton = styled(Button)`
     margin-bottom: 10px;
 `
 
-export { Wrapper, CardWrapper, ImageBox, InfoWrapper, AddToCartButton };
+export { CardWrapper, ImageBox, InfoWrapper, AddToCartButton };

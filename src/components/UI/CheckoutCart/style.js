@@ -3,7 +3,6 @@ import { Box, Flex } from "rebass";
 import { Button, Card } from 'antd';
 
 const MainContainer = styled(Flex)`
-    width: 20%;
     flex-direction: column;
     row-gap: 33px;
     margin-top: 1rem;
@@ -11,6 +10,10 @@ const MainContainer = styled(Flex)`
 
 const CardContainer = styled(Card)`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+
+    .ant-card-body {
+    padding: 10px;
+    }
 `;
 
 const ItemCard = styled(Flex)`
@@ -43,7 +46,7 @@ const ProductPrice = styled(Box)`
 
 const ProductQuantity = styled(Flex)`
     align-items: center;
-    width: 33%;
+    padding: 5px 7px;
     background-color: #2A59FE;
     justify-content: center;
     height: 32px;

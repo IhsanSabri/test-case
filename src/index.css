@@ -14,18 +14,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@media (max-width: 600px) {
-  .checkoutCart {
-    display: none !important;
-  }
-  .filterBrands {
-    display: none !important;
-  }
-  .sortByFilter {
-    display: none !important;
-  }
-  .filterModels {
-    display: none !important;
-  }
-}
