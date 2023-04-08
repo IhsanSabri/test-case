@@ -9,7 +9,6 @@ export const CartSlice = createSlice({
   initialState,
   reducers: {
     addToCart(state, action) {
-      //if that action product has already in cart then if block will work
       const itemIndex = state.cart.findIndex(
         (item) => item.id === action.payload.id
       );
