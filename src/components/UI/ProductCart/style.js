@@ -13,6 +13,4 @@ const Column = styled(Col)`
     border: 1px solid grey;
 `;
 
-
-
 export { Column };
