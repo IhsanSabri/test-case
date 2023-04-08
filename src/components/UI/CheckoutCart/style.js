@@ -12,7 +12,7 @@ const CardContainer = styled(Card)`
     box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
 
     .ant-card-body {
-    padding: 10px;
+        padding: 10px;
     }
 `;
 
