@@ -22,16 +22,16 @@ const ProductCard = ({ product }) => {
     return (
         <Column key={product.id} className="gutter-row" xs={24} md={12} lg={6}>
             <Link to={`/${product.id}`} key={product.id}>
-                <Card
-                    bordered={false}
-                    onLoad={handleImageLoad}
-                    cover={<img alt={product.name} src={product.image} />}
-                >
-                    <Spin spinning={loading} size="large">
-                        <Meta title={product.price}></Meta>
-                        <Meta title={product.name} />
-                    </Spin>
-                </Card>
+                <Spin spinning={loading} size="large">
+                    <Card
+                        bordered={false}
+                        onLoad={handleImageLoad}
+                        cover={<img alt={product.name} src={product.image} />}
+                    >
+                    <Meta title={product.price}></Meta>
+                    <Meta title={product.name} />
+                    </Card>
+                </Spin>
             </Link>
             <Button type="primary" onClick={addProduct}>Add To Cart</Button>
         </Column>

@@ -54,7 +54,7 @@ const SortByFilter = ({ titleName, data, setData }) => {
           }, 250);
       
           return () => clearInterval(intervalId);  
-    }, [sortFunction, value, arrayForSort])
+    }, [sortFunction, value, arrayForSort]);
 
     const onChange = (e) => {
         setValue(e.target.value);
