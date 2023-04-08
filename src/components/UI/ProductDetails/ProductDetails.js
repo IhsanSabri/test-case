@@ -16,12 +16,12 @@ const ProductDetails = () => {
 
     const fetchProductDetail = async (id) => {
         axios.get(`https://5fc9346b2af77700165ae514.mockapi.io/products/${id}`)
-            .then(response => {
-                setData(response.data);
-            })
-            .catch(error => {
-                console.log(error);
-            });
+        .then(response => {
+            setData(response.data);
+        })
+        .catch(error => {
+            console.log(error);
+        });
     };
 
     useEffect(() => {
